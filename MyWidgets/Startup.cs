@@ -1,3 +1,4 @@
+using MainWidgets.AutoMappers;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -26,7 +27,8 @@ namespace MyWidgets
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            //We are adding this row for using automapper's features
+            services.AddAutoMapper(typeof(CustomerMapper));
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
