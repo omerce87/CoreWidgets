@@ -7,4 +7,8 @@ DataTypes : Implicit
 
 DataTypes : Explicit
 
+Reflection : TypeConverter
+
+AutoMappers : CustomerMapper
+
 
